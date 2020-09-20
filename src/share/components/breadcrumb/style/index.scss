@@ -1,0 +1,18 @@
+#breadcrumb-schance {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    a {
+        position: relative;
+        padding-right: 15px;
+        i {
+            margin-left: 15px;
+        }
+    }
+    a:last-child {
+        color: #ff424e;
+    }
+    a:last-child::after {
+        display: none;
+    }
+}

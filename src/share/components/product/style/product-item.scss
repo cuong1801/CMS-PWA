@@ -1,0 +1,94 @@
+.product-schance {
+    .img-product {
+        height: 200px;
+        text-align: center;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    background: #fff;
+    &:hover {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    .price-product {
+        font-weight: 700;
+        color: #222;
+        font-size: 15px;
+        height: 25px;
+        .product-price-initial {
+            font-weight: 100;
+            text-decoration: line-through;
+            color: #b3b3b3;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+    }
+    .percent-product {
+        position: absolute;
+        top: 10px;
+        font-size: 13px;
+        left: 10px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        padding-bottom: 4px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        width: 40px;
+        height: 36px;
+        background-size: 40px 36px;
+        background-position: 0px 0px;
+        background-image: url(../../../../assets/images/deal-tag.png);
+    }
+    .title-product {
+        text-transform: uppercase;
+        font-size: 13px;
+        margin: 15px 0 5px;
+        line-height: 21px;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        min-height: 42px;
+    }
+    .company-product {
+        border-top: 1px dotted #e8e8e8;
+        margin-top: 10px;
+        padding-top: 10px;
+        display: block;
+        font-size: 12px;
+    }
+    .percent-donate {
+        margin-top: 5px;
+        font-size: 13px;
+        margin-bottom: 10px;
+        .number-donate {
+            font-weight: 700;
+            color: #222;
+            margin-left: 5px;
+        }
+    }
+    .number-cart {
+        display: flex;
+        justify-content: space-between;
+        .select-cart {
+            background: #ff424e;
+            color: #fff;
+            height: 35px;
+            padding: 0 10px;
+            line-height: 35px;
+            font-size: 13px;
+            border: none;
+        }
+        input {
+            outline: none;
+        }
+    }
+}

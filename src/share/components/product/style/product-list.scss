@@ -1,0 +1,26 @@
+#home-product-list {
+    #product-tab {
+        position: relative;
+        padding: 0 15px;
+    }
+    .heading-part {
+        @media (max-width: 991px) {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .list-company {
+            border: none;
+            float: right;
+            width: 400px;
+            @media (max-width: 991px) {
+                margin-top: 15px;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+            }
+        }
+    }
+}
+.product-grid {
+    margin: 0 -5px;
+}

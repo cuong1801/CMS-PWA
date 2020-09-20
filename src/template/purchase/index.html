@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Theo dõi đơn hàng</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="viewport" content="width=device-width" />
+        <!-- =====  CSS  ===== -->
+        <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../style/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    </head>
+
+    <body>
+        <!-- =====  LODER  ===== -->
+        <div class="wrapper">
+            <!-- =====  HEADER START  ===== -->
+            <header id="header">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-push-6">
+                                <ul class="header-top-right text-right">
+                                    <li class="account"><a href="login.html">Tài khoản</a></li>
+                                    <li class="cart"><a href="cart_page.html">Giỏ hàng</a></li>
+                                    <li class="cart"><a href="checkout.html">Thanh toán</a></li>
+                                    <li class="cart">
+                                        <a href="purchase.html">Theo dõi đơn hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header">
+                    <div class="container">
+                        <nav class="navbar">
+                            <div class="navbar-header mtb_20">
+                                <a class="navbar-brand" href="index.html">
+                                    <img alt="HealthCared" src="images/logo.png" />
+                                </a>
+                            </div>
+                            <div class="header-right pull-right">
+                                <button
+                                    class="navbar-toggle pull-left"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target=".js-navbar-collapse"
+                                >
+                                    <span class="i-bar"><i class="fa fa-bars"></i></span>
+                                </button>
+                                <div class="shopping-icon">
+                                    <div
+                                        class="cart-item"
+                                        data-target="#cart-dropdown"
+                                        data-toggle="collapse"
+                                        aria-expanded="true"
+                                        role="button"
+                                    >
+                                        Item's : <span class="cart-qty">02</span>
+                                    </div>
+                                    <div id="cart-dropdown" class="cart-menu">
+                                        <ul>
+                                            <li>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">
+                                                                <a href="#"
+                                                                    ><img
+                                                                        src="images/product/70x84.jpg"
+                                                                        alt="iPod Classic"
+                                                                        title="iPod Classic"
+                                                                /></a>
+                                                            </td>
+                                                            <td class="text-left product-name">
+                                                                <a href="#">MacBook Pro</a>
+                                                                <span class="text-left price">$20.00</span>
+                                                                <input
+                                                                    class="cart-qty"
+                                                                    name="product_quantity"
+                                                                    min="1"
+                                                                    value="1"
+                                                                    type="number"
+                                                                />
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <a class="close-cart"
+                                                                    ><i class="fa fa-times-circle"></i
+                                                                ></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">
+                                                                <a href="#"
+                                                                    ><img
+                                                                        src="images/product/70x84.jpg"
+                                                                        alt="iPod Classic"
+                                                                        title="iPod Classic"
+                                                                /></a>
+                                                            </td>
+                                                            <td class="text-left product-name">
+                                                                <a href="#">MacBook Pro</a>
+                                                                <span class="text-left price">$20.00</span>
+                                                                <input
+                                                                    class="cart-qty"
+                                                                    name="product_quantity"
+                                                                    min="1"
+                                                                    value="1"
+                                                                    type="number"
+                                                                />
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <a class="close-cart"
+                                                                    ><i class="fa fa-times-circle"></i
+                                                                ></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <li>
+                                                <form>
+                                                    <input
+                                                        class="btn pull-right mt_10"
+                                                        value="Xem giỏ hàng"
+                                                        type="submit"
+                                                    />
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="main-search pull-right">
+                                    <div class="search-overlay">
+                                        <!-- Close Icon -->
+                                        <a href="javascript:void(0)" class="search-overlay-close"></a>
+                                        <!-- End Close Icon -->
+                                        <div class="container">
+                                            <!-- Search Form -->
+                                            <form
+                                                role="search"
+                                                id="searchform"
+                                                action="http://html.lionode.com/search"
+                                                method="get"
+                                            >
+                                                <label class="h5 normal search-input-label"
+                                                    >Enter keywords To Search Entire Store</label
+                                                >
+                                                <input value="" name="q" placeholder="Search here..." type="search" />
+                                                <button type="submit"></button>
+                                            </form>
+                                            <!-- End Search Form -->
+                                        </div>
+                                    </div>
+                                    <div class="header-search">
+                                        <a id="search-overlay-btn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+                                <ul id="menu" class="nav navbar-nav">
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li><a href="about.html">Giới thiệu</a></li>
+                                    <li><a href="category_page.html">Sản phẩm</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.nav-collapse -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-3">
+                                <div class="category" onclick="showCompany()">
+                                    <div
+                                        class="menu-bar"
+                                        data-target="#category-menu,#category-menu-responsive"
+                                        data-toggle="collapse"
+                                        aria-expanded="true"
+                                        role="button"
+                                    >
+                                        <h4 class="category_text">Doanh nghiệp</h4>
+                                        <span class="i-bar"><i class="fa fa-bars"></i></span>
+                                    </div>
+                                    <div id="category-menu">
+                                        <div class="nav-responsive">
+                                            <ul class="nav main-navigation collapse in">
+                                                <li><a href="#">SHE Chocolate</a></li>
+                                                <li><a href="#">TRUNG PHONG FOODs</a></li>
+                                                <li><a href="#">YẾN SÀO BẢO TRÂN</a></li>
+                                                <li><a href="#">ANDI Leather</a></li>
+                                                <li><a href="#">CLEAN N' GREEN</a></li>
+                                                <li><a href="#">ZONE7 Mini Cinema n Fast-food</a></li>
+                                                <li><a href="#">Công ty TNHH TM&DV Du Lịch PPS</a></li>
+                                                <li><a href="#">Công ty TNHH SAGA</a></li>
+                                                <li><a href="#">Công ty cổ phần dinh dưỡng CNC</a></li>
+                                                <li><a href="#">Cây Xanh CMT Garden</a></li>
+                                                <li><a href="#">MINORI</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-md-8 col-lg-9">
+                                <div class="header-bottom-right offers">
+                                    <div class="marquee">
+                                        <span
+                                            ><i class="fa fa-circle" aria-hidden="true"></i>Cần lắm những ngôi trường ấm
+                                            áp</span
+                                        >
+                                        <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi sẽ nhận lại</span>
+                                        <span
+                                            ><i class="fa fa-circle" aria-hidden="true"></i>Nụ cười hồn nhiên giữa muôn
+                                            bề thiếu thốn</span
+                                        >
+                                        <span
+                                            ><i class="fa fa-circle" aria-hidden="true"></i>Những mảnh đời khó
+                                            khăn</span
+                                        >
+                                        <span><i class="fa fa-circle" aria-hidden="true"></i>Trẻ em vùng cao</span>
+                                        <span
+                                            ><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là chúng ta sẽ được
+                                            nhận lại</span
+                                        >
+                                        <span
+                                            ><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là chúng ta sẽ được
+                                            nhận lại</span
+                                        >
+                                        <span
+                                            ><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là chúng ta sẽ được
+                                            nhận lại</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="container">
+            <div class="purchase">
+                <div class="purchase-header">
+                    <div class="purchase-header-item purchase-header-selected">
+                        Tất cả
+                    </div>
+                    <div class="purchase-header-item">Chờ xử lý(1)</div>
+                    <div class="purchase-header-item">Đang giao(1)</div>
+                    <div class="purchase-header-item">Hoàn thành</div>
+                    <div class="purchase-header-item">Đã hủy</div>
+                </div>
+                <div class="purchase-content">
+                    <div class="purchase-empty">
+                        <img src="../images/schance/icon-empty.png" alt="" />
+                        <p class="not-purchase">Chưa có đơn hàng</p>
+                    </div>
+                    <div class="purchase-item">
+                        <div class="purchase-company">
+                            <div class="logo-name-company">
+                                <img src="../images/schance/logo-minori.jpg" alt="" />
+                                <span class="name-company-purchase">Minori</span>
+                            </div>
+                            <span class="status-purchase">Đang giao</span>
+                        </div>
+                        <div class="purchase-product">
+                            <div class="purchase-product-item">
+                                <div class="purchase-product-col">
+                                    <a class="purchase-product-col-img">
+                                        <img src="../images/schance/product.jpg" alt="" />
+                                    </a>
+                                    <div class="purchase-product-col-name">
+                                        <a class="purchase-product-title" href=""
+                                            >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                                        >
+                                        <div class="purchase-product-donate">
+                                            <span class="purchase-donate-title">Ủng hộ:</span>
+                                            <span class="purchase-donate-price">20,000đ</span>
+                                        </div>
+                                        <div class="purchae-product-amount">x 1</div>
+                                    </div>
+                                </div>
+                                <div class="purchase-price-col">
+                                    <span class="purchase-price-origin">30,000đ</span>
+                                    <span class="purchase-price-discount">20,000đ</span>
+                                </div>
+                            </div>
+                            <div class="purchase-product-item">
+                                <div class="purchase-product-col">
+                                    <a class="purchase-product-col-img">
+                                        <img src="../images/schance/product.jpg" alt="" />
+                                    </a>
+                                    <div class="purchase-product-col-name">
+                                        <a class="purchase-product-title" href=""
+                                            >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                                        >
+                                        <div class="purchase-product-donate">
+                                            <span class="purchase-donate-title">Ủng hộ:</span>
+                                            <span class="purchase-donate-price">20,000đ</span>
+                                        </div>
+                                        <div class="purchae-product-amount">x 1</div>
+                                    </div>
+                                </div>
+                                <div class="purchase-price-col">
+                                    <span class="purchase-price-origin">30,000đ</span>
+                                    <span class="purchase-price-discount">20,000đ</span>
+                                </div>
+                            </div>
+                            <div class="purchase-product-total">
+                                <div class="purchase-product-line">
+                                    <span class="purchase-total-title">Tổng số tiền:</span>
+                                    <span class="purchase-total-price">1,500,000đ</span>
+                                </div>
+                                <a href="" class="purchase-product-detail">Xem chi tiết đơn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase-item">
+                        <div class="purchase-company">
+                            <div class="logo-name-company">
+                                <img
+                                    src="https://schance.uploading.asia/content/uploads/media/company/1598323357247/bk.jpg"
+                                    alt=""
+                                />
+                                <span class="name-company-purchase">ZONE7</span>
+                            </div>
+                            <span class="status-purchase">Đã hủy</span>
+                        </div>
+                        <div class="purchase-product">
+                            <div class="purchase-product-item">
+                                <div class="purchase-product-col">
+                                    <a class="purchase-product-col-img">
+                                        <img src="../images/schance/product.jpg" alt="" />
+                                    </a>
+                                    <div class="purchase-product-col-name">
+                                        <a class="purchase-product-title" href=""
+                                            >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                                        >
+                                        <div class="purchase-product-donate">
+                                            <span class="purchase-donate-title">Ủng hộ:</span>
+                                            <span class="purchase-donate-price">20,000đ</span>
+                                        </div>
+                                        <div class="purchae-product-amount">x 1</div>
+                                    </div>
+                                </div>
+                                <div class="purchase-price-col">
+                                    <span class="purchase-price-origin">30,000đ</span>
+                                    <span class="purchase-price-discount">20,000đ</span>
+                                </div>
+                            </div>
+                            <div class="purchase-product-total">
+                                <div class="purchase-product-line">
+                                    <span class="purchase-total-title">Tổng số tiền:</span>
+                                    <span class="purchase-total-price">1,500,000đ</span>
+                                </div>
+                                <a href="" class="purchase-product-detail">Xem chi tiết đơn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            Click vào nút xem chi tiết đơn hoặc tên sản phẩm sẽ qua component chi tiết đơn hàng như dưới đây
+            <div class="detail-purchase">
+                <div class="code-status-detail">
+                    <div class="code-detail-purchase">
+                        <span class="code-detail-title">Mã đơn hàng:</span>
+                        <span class="code-detail-product">ORD959281</span>
+                    </div>
+                    <span class="status-detail-purchase">Đã hủy</span>
+                </div>
+                <div class="address-purchase">
+                    <div class="address-header">Địa chỉ nhận hàng</div>
+                    <div class="line-address-purchase clearfix">
+                        <span class="title-info">Họ tên:</span>
+                        <span class="content-info">Ngô Văn Quốc</span>
+                    </div>
+                    <div class="line-address-purchase clearfix">
+                        <span class="title-info">Số điện thoại:</span>
+                        <span class="content-info">0974028392</span>
+                    </div>
+                    <div class="line-address-purchase clearfix">
+                        <span class="title-info">Địa chỉ:</span>
+                        <span class="content-info">Cầu Đỏ - Túy Loan, Đà Nẵng</span>
+                    </div>
+                </div>
+                <div class="purchase-item">
+                    <div class="purchase-company">
+                        <div class="logo-name-company">
+                            <img
+                                src="https://schance.uploading.asia/content/uploads/media/company/1598323357247/bk.jpg"
+                                alt=""
+                            />
+                            <span class="name-company-purchase">ZONE7</span>
+                        </div>
+                    </div>
+                    <div class="purchase-product">
+                        <div class="purchase-product-item">
+                            <div class="purchase-product-col">
+                                <a class="purchase-product-col-img">
+                                    <img src="../images/schance/product.jpg" alt="" />
+                                </a>
+                                <div class="purchase-product-col-name">
+                                    <a class="purchase-product-title" href=""
+                                        >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                                    >
+                                    <div class="purchase-product-donate">
+                                        <span class="purchase-donate-title">Ủng hộ:</span>
+                                        <span class="purchase-donate-price">20,000đ</span>
+                                    </div>
+                                    <div class="purchae-product-amount">x 1</div>
+                                </div>
+                            </div>
+                            <div class="purchase-price-col">
+                                <span class="purchase-price-origin">30,000đ</span>
+                                <span class="purchase-price-discount">20,000đ</span>
+                            </div>
+                        </div>
+                        <div class="purchase-product-total">
+                            <div class="purchase-product-line">
+                                <span class="purchase-total-title">Tổng số tiền:</span>
+                                <span class="purchase-total-price">1,500,000đ</span>
+                            </div>
+                            <div class="purchase-payment-method">
+                                <span class="purchase-payment-title">Phương thức thanh toán:</span>
+                                <span class="purchase-payment-content">Thanh toán khi nhận hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====  FOOTER START  ===== -->
+        <div class="footer">
+            <div class="footer-bottom mt_30 ptb_10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="copyright-part">© Bản quyền thuộc về S-CHANCE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====  FOOTER END  ===== -->
+        <a id="scrollup">
+            <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                class="icon_30C7"
+            >
+                <path
+                    d="M10.667 14.667h4v13.333h2.667v-13.333h4l-5.333-5.333-5.333 5.333zM5.333 4v2.667h21.333v-2.667h-21.333z"
+                ></path>
+            </svg>
+        </a>
+        <script>
+            function showCompany() {
+                const x = document.getElementById('category-menu')
+                if (x.style.display === 'block') {
+                    x.style.display = 'none'
+                } else {
+                    x.style.display = 'block'
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+/* Make it a marquee */
+
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+    text-indent: 0;
+    // animation: marquee 20s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move */
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.offers {
+    padding: 12px 0px 8px 0;
+    letter-spacing: 0;
+    font-style: italic;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.offers span {
+    color: #fff;
+    font-style: normal;
+}
+
+.offers i {
+    color: #ff424e;
+    margin: 0 10px 0 30px;
+}

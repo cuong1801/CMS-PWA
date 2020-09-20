@@ -1,0 +1,54 @@
+#product-tab {
+    .search-text {
+        padding: 10px;
+        background-color: #e8e8e8;
+        .search-body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .search-product-name {
+                border: none;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+                height: 34px;
+                &:focus {
+                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+                }
+                &::placeholder {
+                    color: #b3b3b3;
+                    font-size: 14px;
+                }
+                &::-webkit-input-placeholder {
+                    color: #b3b3b3;
+                }
+            }
+            & > div:first-child,
+            .sort-price,
+            .search-company {
+                width: 33%;
+            }
+            @media (max-width: 700px) {
+                & > div:first-child,
+                .sort-price,
+                .search-company {
+                    width: 100%;
+                    margin: 5px 0;
+                }
+            }
+        }
+        .button-search {
+            margin-top: 10px;
+            width: 100%;
+            text-align: right;
+            .search-submit {
+                background-color: #ff424e;
+                outline: none;
+                &:hover {
+                    background-color: red;
+                }
+            }
+            @media (max-width: 700px) {
+                margin-top: 5px;
+            }
+        }
+    }
+}

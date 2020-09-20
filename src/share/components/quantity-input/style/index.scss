@@ -1,0 +1,27 @@
+.addtocart_quantity {
+    color: #333;
+    border: 1px solid #dadada;
+    width: 35px;
+    height: 35px;
+    float: left;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    background: #f2f2f2;
+}
+.btn_increment,
+.btn_decrement {
+    background-color: transparent;
+    border: 1px solid #dadada;
+    width: 35px;
+    height: 35px;
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn_decrement {
+    border-right: none;
+}
+.btn_increment {
+    border-left: none;
+}

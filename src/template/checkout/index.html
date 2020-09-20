@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Thanh toán</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- =====  CSS  ===== -->
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+</head>
+
+<body>
+    <!-- =====  LODER  ===== -->
+    <div class="wrapper">
+        <!-- =====  HEADER START  ===== -->
+        <header id="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6">
+                            <ul class="header-top-right text-right">
+                                <li class="account"><a href="login.html">Tài khoản</a></li>
+                                <li class="cart"><a href="cart_page.html">Giỏ hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar">
+                        <div class="navbar-header mtb_20">
+                            <a class="navbar-brand" href="index.html">
+                                <img alt="HealthCared" src="../images/schance/logo.png" />
+                            </a>
+                        </div>
+                        <div class="header-right pull-right">
+                            <button class="navbar-toggle pull-left" type="button" data-toggle="collapse"
+                                data-target=".js-navbar-collapse">
+                                <span class="i-bar"><i class="fa fa-bars"></i></span>
+                            </button>
+                            <div class="shopping-icon">
+                                <div class="cart-item" data-target="#cart-dropdown" data-toggle="collapse"
+                                    aria-expanded="true" role="button">
+                                    Item's : <span class="cart-qty">02</span>
+                                </div>
+                                <div id="cart-dropdown" class="cart-menu">
+                                    <ul>
+                                        <li>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#"><img src="../images/product/70x84.jpg"
+                                                                    alt="iPod Classic" title="iPod Classic" /></a>
+                                                        </td>
+                                                        <td class="text-left product-name">
+                                                            <a href="#">MacBook Pro</a>
+                                                            <span class="text-left price">$20.00</span>
+                                                            <input class="cart-qty" name="product_quantity" min="1"
+                                                                value="1" type="number" />
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a class="close-cart"><i class="fa fa-times-circle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#"><img src="../images/product/70x84.jpg"
+                                                                    alt="iPod Classic" title="iPod Classic" /></a>
+                                                        </td>
+                                                        <td class="text-left product-name">
+                                                            <a href="#">MacBook Pro</a>
+                                                            <span class="text-left price">$20.00</span>
+                                                            <input class="cart-qty" name="product_quantity" min="1"
+                                                                value="1" type="number" />
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a class="close-cart"><i class="fa fa-times-circle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <input class="btn pull-right mt_10" value="Xem giỏ hàng"
+                                                    type="submit" />
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-search pull-right">
+                                <div class="search-overlay">
+                                    <!-- Close Icon -->
+                                    <a href="javascript:void(0)" class="search-overlay-close"></a>
+                                    <!-- End Close Icon -->
+                                    <div class="container">
+                                        <!-- Search Form -->
+                                        <form role="search" id="searchform" action="http://html.lionode.com/search"
+                                            method="get">
+                                            <label class="h5 normal search-input-label">Enter keywords To Search Entire
+                                                Store</label>
+                                            <input value="" name="q" placeholder="Search here..." type="search" />
+                                            <button type="submit"></button>
+                                        </form>
+                                        <!-- End Search Form -->
+                                    </div>
+                                </div>
+                                <div class="header-search">
+                                    <a id="search-overlay-btn"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+                            <ul id="menu" class="nav navbar-nav">
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="about.html">Giới thiệu</a></li>
+                                <li><a href="category_page.html">Sản phẩm</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.nav-collapse -->
+                    </nav>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-3">
+                            <div class="category" onclick="showCompany()">
+                                <div class="menu-bar" data-target="#category-menu,#category-menu-responsive"
+                                    data-toggle="collapse" aria-expanded="true" role="button">
+                                    <h4 class="category_text">Doanh nghiệp</h4>
+                                    <span class="i-bar"><i class="fa fa-bars"></i></span>
+                                </div>
+                                <div id="category-menu">
+                                    <div class="nav-responsive">
+                                        <ul class="nav main-navigation collapse in">
+                                            <li><a href="#">SHE Chocolate</a></li>
+                                            <li><a href="#">TRUNG PHONG FOODs</a></li>
+                                            <li><a href="#">YẾN SÀO BẢO TRÂN</a></li>
+                                            <li><a href="#">ANDI Leather</a></li>
+                                            <li><a href="#">CLEAN N' GREEN</a></li>
+                                            <li><a href="#">ZONE7 Mini Cinema n Fast-food</a></li>
+                                            <li><a href="#">Công ty TNHH TM&DV Du Lịch PPS</a></li>
+                                            <li><a href="#">Công ty TNHH SAGA</a></li>
+                                            <li><a href="#">Công ty cổ phần dinh dưỡng CNC</a></li>
+                                            <li><a href="#">Cây Xanh CMT Garden</a></li>
+                                            <li><a href="#">MINORI</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-8 col-lg-9">
+                            <div class="header-bottom-right offers">
+                                <div class="marquee">
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cần lắm
+                                        những ngôi trường ấm áp</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi sẽ
+                                        nhận lại</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Nụ cười
+                                        hồn nhiên giữa muôn bề thiếu thốn</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Những mảnh
+                                        đời khó khăn</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Trẻ em
+                                        vùng cao</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
+                                        chúng ta sẽ được nhận lại</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
+                                        chúng ta sẽ được nhận lại</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
+                                        chúng ta sẽ được nhận lại</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- =====  HEADER END  ===== -->
+        <div class="container">
+            <div id="breadcrum-schance">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./category_page.html">Sản phẩm</a>
+                <a href="#">Thanh toán</a>
+            </div>
+        </div>
+        <!-- =====  CONTAINER START  ===== -->
+        <div class="container">
+            <div class="process-payment clearfix">
+                <div class="progress-inner-step enable">
+                    <span class="step-label">Đăng nhập</span>
+                </div>
+                <div class="progress-inner-step disable">
+                    <span class="step-label">Địa chỉ giao hàng</span>
+                </div>
+                <div class="progress-inner-step disable">
+                    <span class="step-label">Thanh Toán & Đặt Mua</span>
+                </div>
+                <div class="progress-inner-bar"></div>
+            </div>
+            <div class="login-checkout">
+                <div class="title-checkout">Đăng nhập</div>
+                <div class="content-checkout">
+                    <button class="btn-login-checkout">
+                        <span class="icon-login-checkout"><i class="fa fa-facebook"></i></span>
+                        <span class="text-login-checkout">Đăng nhập bằng Facebook</span>
+                    </button>
+                </div>
+            </div>
+            <div class="address-checkout">
+                <div class="title-checkout">Địa chỉ giao hàng</div>
+                <div class="content-checkout">
+                    <div class="row-address">
+                        <span class="title-address">Họ tên người nhận:</span>
+                        <input type="text" value="" placeholder="Nhập họ tên">
+                    </div>
+                    <div class="row-address">
+                        <span class="title-address">Số điện thoại:</span>
+                        <input type="text" value="" placeholder="Số điện thoại liên hệ khi giao hàng">
+                    </div>
+                    <div class="row-address">
+                        <span class="title-address">Địa chỉ nhận hàng:</span>
+                        <input type="text" placeholder="Nhập địa chỉ">
+                    </div>
+                    <div class="continue-product-payment">
+                        <a href="">Tiếp tục</a>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-checkout">
+                <div class="title-checkout"><span>Thanh Toán & Đặt Mua</span><a href="">Thay đổi</a></div>
+                <div class="content-checkout">
+                    <div class="address-payment">
+                        <div class="title-address-payment">
+                            Thông tin người nhận
+                        </div>
+                        <div class="content-address-payment">
+                            <div class="line-address-payment clearfix">
+                                <span class="title-info">Họ tên:</span>
+                                <span class="content-info">Ngô Văn Quốc</span>
+                            </div>
+                            <div class="line-address-payment clearfix">
+                                <span class="title-info">Số điện thoại:</span>
+                                <span class="content-info">0974028392</span>
+                            </div>
+                            <div class="line-address-payment clearfix">
+                                <span class="title-info">Địa chỉ:</span>
+                                <span class="content-info">Cầu Đỏ - Túy Loan, Đà Nẵng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-payment">
+                        <div class="title-address-payment">
+                            Sản phẩm
+                        </div>
+                        <div class="content-product-payment">
+                            <div class="cart-product">
+                                <div class="cart-page-product-header">
+                                    <div class="cart-percent cart-percent-first cart-page-product-header__product">Sản
+                                        phẩm
+                                    </div>
+                                    <div class="cart-percent cart-page-product-header__unit-price">Đơn giá</div>
+                                    <div class="cart-percent cart-page-product-header__quantity">Số lượng</div>
+                                    <div class="cart-percent cart-page-product-header__total-price">Tổng tiền</div>
+                                    <div class="cart-percent cart-page-product-header__donate">Ủng hộ</div>
+                                </div>
+                            </div>
+                            <div class="cart-item-over">
+                                <div class="cart-item__content">
+                                    <div class="cart-percent cart-percent-first cart-item__cell-overview">
+                                        <div class="cart-item__cell-overview--line">
+                                            <a href="./category_page.html">
+                                                <div class="cart-item-overview__thumbnail"
+                                                    style="background-image: url(./../images/schance/product.jpg);">
+                                                </div>
+                                            </a>
+                                            <div class="cart-item-overview__product-name-wrapper"><a
+                                                    href="./product_detail_page.html">Tranh Văn
+                                                    Phòng
+                                                    Đến Sớm 5 Phút Là Đúng Giờ</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-percent cart-item__cell-unit-price">
+                                        <div><span
+                                                class="cart-item__unit-price cart-item__unit-price--before">1.940.000đ</span><span
+                                                class="cart-item__unit-price cart-item__unit-price--after">1.490.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="cart-percent cart-item__cell-quantity">1</div>
+                                    <div class="cart-percent cart-item__cell-total-price"><span>1.490.000đ</span></div>
+                                    <div class="cart-percent cart-item__cell-donate">
+                                        20,000đ
+                                    </div>
+                                </div>
+                                <div class="cart-item__content">
+                                    <div class="cart-percent cart-percent-first cart-item__cell-overview">
+                                        <div class="cart-item__cell-overview--line">
+                                            <a href="./category_page.html">
+                                                <div class="cart-item-overview__thumbnail"
+                                                    style="background-image: url(./../images/schance/product.jpg);">
+                                                </div>
+                                            </a>
+                                            <div class="cart-item-overview__product-name-wrapper"><a
+                                                    href="./product_detail_page.html">Tranh Văn
+                                                    Phòng
+                                                    Đến Sớm 5 Phút Là Đúng Giờ</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-percent cart-item__cell-unit-price">
+                                        <div><span
+                                                class="cart-item__unit-price cart-item__unit-price--before">1.940.000đ</span><span
+                                                class="cart-item__unit-price cart-item__unit-price--after">1.490.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="cart-percent cart-item__cell-quantity">1</div>
+                                    <div class="cart-percent cart-item__cell-total-price"><span>1.490.000đ</span></div>
+                                    <div class="cart-percent cart-item__cell-donate">
+                                        20,000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item-mobile">
+                                <div class="item-line-cart">
+                                    <div class="img-product-mobile">
+                                        <a href="./product_detail_page.html">
+                                            <img src="../images/schance/product.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-content-mobile">
+                                        <a class="title-product-mobile" href="./product_detail_page.html">Tranh Văn
+                                            Phòng Đến Sớm 5 Phút Là Đúng
+                                            Giờ</a>
+                                        <div class="unit-price">
+                                            <span class="cost-price">1.940.000đ</span>
+                                            <span class="reduced-price">1.490.000đ</span>
+                                        </div>
+                                        <div class="donate-mobile">
+                                            <span class="title-donate">Ủng hộ:</span>
+                                            <span class="price-donate">20,000đ</span>
+                                        </div>
+                                        <div class="number-delete">
+                                            <span class="count-payment-title">Số lượng:</span>
+                                            <span class="count-payment-content">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-line-cart">
+                                    <div class="img-product-mobile">
+                                        <a href="./product_detail_page.html">
+                                            <img src="../images/schance/product.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-content-mobile">
+                                        <a class="title-product-mobile" href="./product_detail_page.html">Tranh Văn
+                                            Phòng Đến Sớm 5 Phút Là Đúng
+                                            Giờ</a>
+                                        <div class="unit-price">
+                                            <span class="cost-price">1.940.000đ</span>
+                                            <span class="reduced-price">1.490.000đ</span>
+                                        </div>
+                                        <div class="donate-mobile">
+                                            <span class="title-donate">Ủng hộ:</span>
+                                            <span class="price-donate">20,000đ</span>
+                                        </div>
+                                        <div class="number-delete">
+                                            <span class="count-payment-title">Số lượng:</span>
+                                            <span class="count-payment-content">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-payment-product">
+                                <span class="total-payment-title">Tổng số tiền:</span>
+                                <span class="total-payment-count">1,500,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-payment">
+                        <div class="title-address-payment">
+                            Chọn phương thức thanh toán
+                        </div>
+                        <div class="content-method-payment">
+                            <div class="list-method-payment">
+                                <a href="">Thanh toán khi nhận hàng</a>
+                                <a href="">Ví AirPay</a>
+                            </div>
+                            <div class="title-method-payment">
+                                Thanh toán khi nhận hàng
+                            </div>
+                            <div class="row">
+                                <div class="method-payment-select col-lg-3 col-lg-push-9">
+                                    <div class="row-payment-select">
+                                        <span class="title-payment-select">Tổng tiền hàng:</span>
+                                        <span class="content-payment-select">1,500,000đ</span>
+                                    </div>
+                                    <div class="row-payment-select">
+                                        <span class="title-payment-select">Phí vận chuyển:</span>
+                                        <span class="content-payment-select">10,000đ</span>
+                                    </div>
+                                    <div class="row-payment-select">
+                                        <span class="title-payment-select">Tổng thanh toán:</span>
+                                        <span class="content-payment-select finally">1,600,000đ</span>
+                                    </div>
+                                    <a class="btn-payment-select">
+                                        Đặt hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====  CONTAINER END  ===== -->
+    <!-- =====  FOOTER START  ===== -->
+    <div class="footer">
+        <div class="footer-bottom mt_30 ptb_10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copyright-part">
+                            © Bản quyền thuộc về S-CHANCE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====  FOOTER END  ===== -->
+    <a id="scrollup">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+            class="icon_30C7">
+            <path
+                d="M10.667 14.667h4v13.333h2.667v-13.333h4l-5.333-5.333-5.333 5.333zM5.333 4v2.667h21.333v-2.667h-21.333z">
+            </path>
+        </svg>
+    </a>
+    <script>
+        function showCompany() {
+            const x = document.getElementById("category-menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</html>

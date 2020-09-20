@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =====  BASIC PAGE NEEDS  ===== -->
+    <meta charset="utf-8" />
+    <title>Chi tiết sản phẩm</title>
+    <!-- =====  MOBILE SPECIFICATION  ===== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- =====  CSS  ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+</head>
+
+<body class="shop-detail">
+    <!-- =====  LODER  ===== -->
+    <div class="wrapper">
+        <!-- =====  HEADER START  ===== -->
+        <header id="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6">
+                            <ul class="header-top-right text-right">
+                                <li class="account"><a href="login.html">Tài khoản</a></li>
+                                <li class="cart"><a href="cart_page.html">Giỏ hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar">
+                        <div class="navbar-header mtb_20">
+                            <a class="navbar-brand" href="index.html">
+                                <img alt="HealthCared" src="../images/schance/logo.png" />
+                            </a>
+                        </div>
+                        <div class="header-right pull-right">
+                            <button class="navbar-toggle pull-left" type="button" data-toggle="collapse"
+                                data-target=".js-navbar-collapse">
+                                <span class="i-bar"><i class="fa fa-bars"></i></span>
+                            </button>
+                            <div class="shopping-icon">
+                                <div class="cart-item" data-target="#cart-dropdown" data-toggle="collapse"
+                                    aria-expanded="true" role="button">
+                                    Item's : <span class="cart-qty">02</span>
+                                </div>
+                                <div id="cart-dropdown" class="cart-menu">
+                                    <ul>
+                                        <li>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#"><img src="../images/product/70x84.jpg"
+                                                                    alt="iPod Classic" title="iPod Classic" /></a>
+                                                        </td>
+                                                        <td class="text-left product-name">
+                                                            <a href="#">MacBook Pro</a>
+                                                            <span class="text-left price">$20.00</span>
+                                                            <input class="cart-qty" name="product_quantity" min="1"
+                                                                value="1" type="number" />
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a class="close-cart"><i class="fa fa-times-circle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">
+                                                            <a href="#"><img src="../images/product/70x84.jpg"
+                                                                    alt="iPod Classic" title="iPod Classic" /></a>
+                                                        </td>
+                                                        <td class="text-left product-name">
+                                                            <a href="#">MacBook Pro</a>
+                                                            <span class="text-left price">$20.00</span>
+                                                            <input class="cart-qty" name="product_quantity" min="1"
+                                                                value="1" type="number" />
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a class="close-cart"><i class="fa fa-times-circle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <form>
+                                                <input class="btn pull-right mt_10" value="Xem giỏ hàng"
+                                                    type="submit" />
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+                            <ul id="menu" class="nav navbar-nav">
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="about.html">Giới thiệu</a></li>
+                                <li><a href="category_page.html">Sản phẩm</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.nav-collapse -->
+                    </nav>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-3">
+                            <div class="category" onclick="showCompany()">
+                                <div class="menu-bar" data-target="#category-menu,#category-menu-responsive"
+                                    data-toggle="collapse" aria-expanded="true" role="button">
+                                    <h4 class="category_text">Doanh nghiệp</h4>
+                                    <span class="i-bar"><i class="fa fa-bars"></i></span>
+                                </div>
+                                <div id="category-menu">
+                                    <div class="nav-responsive">
+                                        <ul class="nav main-navigation collapse in">
+                                            <li><a href="#">SHE Chocolate</a></li>
+                                            <li><a href="#">TRUNG PHONG FOODs</a></li>
+                                            <li><a href="#">YẾN SÀO BẢO TRÂN</a></li>
+                                            <li><a href="#">ANDI Leather</a></li>
+                                            <li><a href="#">CLEAN N' GREEN</a></li>
+                                            <li><a href="#">ZONE7 Mini Cinema n Fast-food</a></li>
+                                            <li><a href="#">Công ty TNHH TM&DV Du Lịch PPS</a></li>
+                                            <li><a href="#">Công ty TNHH SAGA</a></li>
+                                            <li><a href="#">Công ty cổ phần dinh dưỡng CNC</a></li>
+                                            <li><a href="#">Cây Xanh CMT Garden</a></li>
+                                            <li><a href="#">MINORI</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-8 col-lg-9">
+                            <div class="header-bottom-right offers">
+                                <div class="marquee">
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cần lắm
+                                        những ngôi trường ấm áp</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi sẽ
+                                        nhận lại</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Nụ cười
+                                        hồn nhiên giữa muôn bề thiếu thốn</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Những mảnh
+                                        đời khó khăn</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Trẻ em
+                                        vùng cao</span>
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
+                                        chúng ta sẽ được nhận lại</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- =====  HEADER END  ===== -->
+        <!-- =====  BREADCRUM START  ===== -->
+        <div class="container">
+            <div id="breadcrum-schance">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./category_page.html">Sản phẩm</a>
+                <a href="#">Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a>
+            </div>
+        </div>
+        <!-- =====  BREADCRUM END  ===== -->
+        <!-- =====  CONTAINER START  ===== -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 mb_30">
+                    <!-- =====  BANNER STRAT  ===== -->
+                    <div class="content-detail-product">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./../images/schance/product.jpg" alt="">
+                            </div>
+                            <div class="col-md-8 prodetail caption product-thumb">
+                                <h4 class="product-name">
+                                    Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ
+                                </h4>
+                                <div class="price"><span class="price-cost">1,500,000đ</span><span
+                                        class="price-discount">1,700,000đ</span><span
+                                        class="percent-product">-10%</span>
+                                </div>
+                                <div class="des-sort mb_20">Đoạn này là để nhập mô tả ngắn đoạn này là để nhập mô tả
+                                    ngắn đoạn này là để
+                                    nhập mô
+                                    tả ngắn đoạn này là để nhập mô tả ngắn đoạn này là để nhập mô tả ngắn đoạn này là để
+                                    nhập mô tả ngắn
+                                </div>
+                                <div class="company-rate">
+                                    <div class="rate-line">
+                                        <span class="title-rate">Tỉ lệ ủng hộ:</span>
+                                        <span class="content-rate">20%</span>
+                                    </div>
+                                    <div class="rate-line">
+                                        <span class="title-rate">Doanh nghiệp:</span>
+                                        <a href="./company_information.html" class="content-rate">SHE Chocolate</a>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <div class="select-number">
+                                        <span>Số lượng:</span>
+                                        <span class="order-number clearfix">
+                                            <input class="btn_decrement" type="button" value="-">
+                                            <input type="text" class="form_control" id="addtocart_quantity" value="1"
+                                                min="1" maxlength="20">
+                                            <input class="btn_increment" type="button" value="+">
+                                        </span>
+                                        <span class="products-available"><span>300</span> sản phẩm có sẵn</span>
+                                    </div>
+                                    <a href="./cart_page.html" class="buy-to-cart">
+                                        <svg class="shopee-svg-icon _343Jzb icon-add-to-cart"
+                                            enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0">
+                                            <g>
+                                                <g>
+                                                    <polyline fill="none"
+                                                        points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-miterlimit="10"></polyline>
+                                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                                </g>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5"
+                                                    x2="10.5" y1="7" y2="7"></line>
+                                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9"
+                                                    x2="9" y1="8.5" y2="5.5">
+                                                </line>
+                                            </g>
+                                        </svg>
+                                        Mua ngay
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-detail-product">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="title-des-product">Mô tả sản phẩm</div>
+                                <div class="content-des-product">
+                                    <p>🌸🌸Khăn lau bếp sạch bóng dầu mỡ Vargreen (tên cũ Laudry) Poemy
+                                        KT(24x27)</p>
+                                    <p>🌻Kích thước: 24cm x 27cm</p>
+                                    <p>🌻Vagreen ra đời với sứ mệnh giúp cho công việc lau dọn nhà bếp của các bà nội
+                                        trợ trở nên dễ
+                                        dàng hơn bao giờ hết. Vagreen có khả năng lau sạch dầu mỡ mà không nhất thiết
+                                        phải dùng đến hóa
+                                        chất tẩy rửa.Hạn chế sử dụng hóa chất tẩy rửa.</p>
+                                    <p>🌻Đặc tính sợi móc câu có nguồn gốc từ cellulose Polyester vét mọi vết bẩn và dầu
+                                        mỡ trên bề mặt
+                                        vật dụng.</p>
+                                    <p>🌻Bảo vệ da tay và sức khỏe người dùng. Thân thiện với môi trường. Sợi dệt có
+                                        nguồn gốc từ thiên
+                                        nhiên là Cenllulose. Có khả năng tự phân hủy trong môi trường tự nhiên.</p>
+                                    <p>🌻Tiết kiệm thời gian và công sức lau dọn nhà bếp. Tiết kiệm chi phí hóa chất tẩy
+                                        rửa</p>
+                                    <p>🌸🌸Hướng dẫn sử dụng:</p>
+                                    <p>🌻Làm ẩm khăn dưới vòi nước, lau miết mạnh một chiều trên bề mặt vết bẩn. Gập
+                                        khăn và lau lại
+                                        theo chiều ban đầu (không miết đi miết lại khăn trên bề mặt vết bẩn)</p>
+                                    <p>🌻Xả sạch khăn dưới vòi nước để làm sạch</p>
+                                    <p>#khanlaubep #khanlaudaumo #khanlamsachbep #lamsachbepantoan #khanlaubepcaocap
+                                        #khanlaubeptiendung #vesinhnhabep #dungcuvesinhbep</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row relate-detail">
+                <div class="heading-part mb_10">
+                    <h2 class="main_title">Có thể bạn quan tâm</h2>
+                </div>
+                <div class="tab-content clearfix box">
+                    <div class="tab-pane active" id="product-relate">
+                        <div class="nArrivals">
+                            <div class="product-grid clearfix">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="product-schance">
+                                                <div class="img-product">
+                                                    <img src="../images/schance/product.jpg" alt="">
+                                                </div>
+                                                <a href="./product_detail_page.html" class="title-product">Tranh Văn
+                                                    Phòng Đến Sớm 5 Phút Là
+                                                    Đúng
+                                                    Giờ</a>
+                                                <div class="price-product">
+                                                    5,841,000 đ
+                                                    <span class="percent-product">10%</span>
+                                                </div>
+                                                <div class="percent-donate">
+                                                    <span class="title-donate">Tỉ lệ ủng hộ:</span>
+                                                    <span class="number-donate">15%</span>
+                                                </div>
+                                                <div class="number-cart">
+                                                    <span class="order-number clearfix">
+                                                        <input class="btn_decrement" type="button" value="-">
+                                                        <input type="text" class="form_control" id="addtocart_quantity"
+                                                            value="1" min="1" maxlength="20">
+                                                        <input class="btn_increment" type="button" value="+">
+                                                    </span>
+                                                    <a href="" class="select-cart">Chọn mua</a>
+                                                </div>
+                                                <a href="./company_information.html" class="company-product">SHE
+                                                    Chocolate</a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-schance">
+                                                <div class="img-product">
+                                                    <img src="../images/schance/product.jpg" alt="">
+                                                </div>
+                                                <a href="./product_detail_page.html" class="title-product">Tranh Văn
+                                                    Phòng Đến Sớm 5 Phút Là
+                                                    Đúng
+                                                    Giờ</a>
+                                                <div class="price-product">
+                                                    5,841,000 đ
+                                                    <span class="percent-product">10%</span>
+                                                </div>
+                                                <div class="percent-donate">
+                                                    <span class="title-donate">Tỉ lệ ủng hộ:</span>
+                                                    <span class="number-donate">15%</span>
+                                                </div>
+                                                <div class="number-cart">
+                                                    <span class="order-number clearfix">
+                                                        <input class="btn_decrement" type="button" value="-">
+                                                        <input type="text" class="form_control" id="addtocart_quantity"
+                                                            value="1" min="1" maxlength="20">
+                                                        <input class="btn_increment" type="button" value="+">
+                                                    </span>
+                                                    <a href="" class="select-cart">Chọn mua</a>
+                                                </div>
+                                                <a href="./company_information.html" class="company-product">SHE
+                                                    Chocolate</a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-schance">
+                                                <div class="img-product">
+                                                    <img src="../images/schance/product.jpg" alt="">
+                                                </div>
+                                                <a href="./product_detail_page.html" class="title-product">Tranh Văn
+                                                    Phòng Đến Sớm 5 Phút Là
+                                                    Đúng
+                                                    Giờ</a>
+                                                <div class="price-product">
+                                                    5,841,000 đ
+                                                    <span class="percent-product">10%</span>
+                                                </div>
+                                                <div class="percent-donate">
+                                                    <span class="title-donate">Tỉ lệ ủng hộ:</span>
+                                                    <span class="number-donate">15%</span>
+                                                </div>
+                                                <div class="number-cart">
+                                                    <span class="order-number clearfix">
+                                                        <input class="btn_decrement" type="button" value="-">
+                                                        <input type="text" class="form_control" id="addtocart_quantity"
+                                                            value="1" min="1" maxlength="20">
+                                                        <input class="btn_increment" type="button" value="+">
+                                                    </span>
+                                                    <a href="" class="select-cart">Chọn mua</a>
+                                                </div>
+                                                <a href="./company_information.html" class="company-product">SHE
+                                                    Chocolate</a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-schance">
+                                                <div class="img-product">
+                                                    <img src="../images/schance/product.jpg" alt="">
+                                                </div>
+                                                <a href="./product_detail_page.html" class="title-product">Tranh Văn
+                                                    Phòng Đến Sớm 5 Phút Là
+                                                    Đúng
+                                                    Giờ</a>
+                                                <div class="price-product">
+                                                    5,841,000 đ
+                                                    <span class="percent-product">10%</span>
+                                                </div>
+                                                <div class="percent-donate">
+                                                    <span class="title-donate">Tỉ lệ ủng hộ:</span>
+                                                    <span class="number-donate">15%</span>
+                                                </div>
+                                                <div class="number-cart">
+                                                    <span class="order-number clearfix">
+                                                        <input class="btn_decrement" type="button" value="-">
+                                                        <input type="text" class="form_control" id="addtocart_quantity"
+                                                            value="1" min="1" maxlength="20">
+                                                        <input class="btn_increment" type="button" value="+">
+                                                    </span>
+                                                    <a href="" class="select-cart">Chọn mua</a>
+                                                </div>
+                                                <a href="./company_information.html" class="company-product">SHE
+                                                    Chocolate</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="company-tab" class="mt_30">
+                    <div class="heading-part mb_10">
+                        <h2 class="main_title">Các doanh nghiệp tài trợ</h2>
+                    </div>
+                    <div class="tab-content clearfix box">
+                        <div class="company-sponsor">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="company-item">
+                                            <div class="company-img">
+                                                <img src="./../images/schance/Phuhung_1577853216177.png" alt="">
+                                            </div>
+                                            <div class="name-company">
+                                                Phú Hưng - Bảo hiểm nhân thọ
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====  CONTAINER END  ===== -->
+        <!-- =====  FOOTER START  ===== -->
+        <div class="footer">
+            <div class="footer-bottom mt_30 ptb_10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="copyright-part">
+                                © Bản quyền thuộc về S-CHANCE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====  FOOTER END  ===== -->
+    </div>
+    <a id="scrollup">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+            class="icon_30C7">
+            <path
+                d="M10.667 14.667h4v13.333h2.667v-13.333h4l-5.333-5.333-5.333 5.333zM5.333 4v2.667h21.333v-2.667h-21.333z">
+            </path>
+        </svg>
+    </a>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        function showCompany() {
+            const x = document.getElementById("category-menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        var swiper1 = new Swiper('#company-tab .swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '#company-tab .swiper-button-next',
+                prevEl: '#company-tab .swiper-button-prev'
+            },
+            pagination: {
+                el: '#company-tab .swiper-pagination',
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        var swiper2 = new Swiper('#product-relate .swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '#product-relate .swiper-button-next',
+                prevEl: '#product-relate .swiper-button-prev'
+            },
+            spaceBetween: 5,
+            pagination: {
+                el: '#product-relate .swiper-pagination',
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

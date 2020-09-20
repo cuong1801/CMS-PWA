@@ -1,0 +1,51 @@
+.data-over {
+    position: relative;
+    & > i {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #b3b3b3;
+    }
+    .data-input {
+        border: none;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+        outline: 0;
+        width: 100%;
+        padding: 5px 5px 5px 10px;
+        text-transform: uppercase;
+        &::placeholder {
+            color: #b3b3b3;
+            text-transform: initial;
+        }
+        &::-webkit-input-placeholder {
+            color: #b3b3b3;
+            text-transform: initial;
+        }
+        &:focus {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        }
+        &::-webkit-calendar-picker-indicator {
+            opacity: 1;
+            color: #b3b3b3;
+        }
+    }
+    .data-list {
+        position: absolute;
+        z-index: 1000;
+        background: #ffffff;
+        width: 100%;
+        top: calc(100% + 1px);
+        padding: 5px 0;
+        max-height: 200px;
+        overflow-y: scroll;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        & > div {
+            padding: 4px 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            &:hover {
+                color: #ff424e;
+            }
+        }
+    }
+}

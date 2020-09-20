@@ -1,0 +1,34 @@
+#pagination-custom {
+    ul li {
+        margin: 0 3px;
+        button {
+            background-color: #fbfbfb;
+            border: none;
+            display: block;
+            font-size: 14px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            width: 36px;
+            &:hover {
+                background-color: #ff424e;
+                color: #ffffff;
+            }
+        }
+        a {
+            background-color: #fbfbfb;
+            &:hover {
+                background-color: #ff424e;
+                color: #ffffff;
+            }
+        }
+    }
+    .rc-pagination-disabled {
+        cursor: not-allowed;
+    }
+    ul > .rc-pagination-item-active > a {
+        background-color: #ff424e;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+}

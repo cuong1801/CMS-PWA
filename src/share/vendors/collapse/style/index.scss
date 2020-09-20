@@ -1,0 +1,32 @@
+.panel-group {
+    margin-bottom: 5px;
+    .panel-default {
+        display: block;
+        padding: 5px 10px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+        background: #fff;
+        transition: 0.3s;
+        color: #222;
+        &::after {
+            float: right;
+            transition: transform 0.25s linear;
+            -webkit-transition: -webkit-transform 0.25s linear;
+        }
+        &[aria-expanded='true'] {
+            background-color: #e8e8e8;
+            border-bottom: 1px solid #f1f1f1;
+            &:after {
+                content: '\2212';
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+        &[aria-expanded='false'] {
+            &:after {
+                content: '\002b';
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

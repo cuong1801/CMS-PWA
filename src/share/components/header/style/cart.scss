@@ -1,0 +1,85 @@
+.shopping-icon {
+    float: right;
+    padding-bottom: 7px;
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    .cart-item {
+        color: #000;
+        font-weight: 600;
+    }
+    > span {
+        display: block;
+        margin: 0 10px 0 0px;
+        transition: 0.5s;
+        > i {
+            font-size: 24px;
+        }
+    }
+    @media (min-width: 992px) {
+        margin-top: 50px;
+    }
+    @media (min-width: 1200px) {
+        margin-top: 41px;
+    }
+}
+/* ----------------------------------------------
+	2.5 Cart
+----------------------------------------------- */
+
+#cart-dropdown {
+    background: #fff none repeat scroll 0 0;
+    // border: 1px solid #e5e5e5;
+    min-width: 285px;
+    position: absolute;
+    right: 0;
+    top: 44px;
+    z-index: 3;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    height: 0;
+    overflow: hidden;
+}
+
+#cart-dropdown ul {
+    padding: 20px;
+    display: inline-table;
+}
+
+#cart-dropdown .product-name {
+    min-width: 160px;
+    padding-left: 10px !important;
+}
+
+#cart-dropdown .price {
+    display: block;
+    font-size: 14px;
+}
+
+#cart-dropdown .cart-qty {
+    margin-top: 5px;
+    padding: 5px 8px;
+    width: 60px;
+}
+
+#cart-dropdown .table > tbody > tr > td {
+    padding: 10px 0;
+}
+
+.cart-empty {
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    > li:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .ion-android-playstore {
+        font-size: 30px;
+    }
+}
